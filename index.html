@@ -556,46 +556,63 @@
     <!-- Publications Section -->
     <section id="publications" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-slate-800/60">
       <div class="max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
-          <div>
-            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Publications</h2>
-            <p class="mt-2 text-slate-400 text-sm">
-              Peer-reviewed articles and preprints (<span id="pub-count">80</span> papers · <span class="text-sky-300">First Author</span> = Prof. Young Ju Ko as first/sole author · <span class="text-amber-300">Corresponding Author</span> = corresponding author role).
-            </p>
+<div class="flex flex-col gap-4 mb-8">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Publications</h2>
+              <p class="mt-2 text-slate-400 text-sm">
+                Peer-reviewed articles and preprints (<span id="pub-count">80</span> papers · <span class="text-sky-300">First Author</span> = Prof. Young Ju Ko as first/sole author · <span class="text-amber-300">Corresponding Author</span> = corresponding author role).
+              </p>
+            </div>
+
+            <!-- Search & Year Filter Controls -->
+            <div class="flex flex-col sm:flex-row gap-2.5">
+              <label for="pub-search" class="sr-only">Search publications</label>
+              <input
+                type="text"
+                id="pub-search"
+                placeholder="Search title, author, journal, *..."
+                class="px-3.5 py-2 rounded-lg bg-navy-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 w-full sm:w-64"
+              />
+              <label for="pub-year-filter" class="sr-only">Filter publications by year</label>
+              <select
+                id="pub-year-filter"
+                class="px-3.5 py-2 rounded-lg bg-navy-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-sky-400"
+              >
+                <option value="ALL">All Years (2013–2026)</option>
+                <option value="2026">2026</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2013">2013</option>
+              </select>
+            </div>
           </div>
 
-          <!-- Search & Filter Controls -->
-          <div class="flex flex-col sm:flex-row gap-2.5">
-            <label for="pub-search" class="sr-only">Search publications</label>
-            <input
-              type="text"
-              id="pub-search"
-              placeholder="Search title, author, journal, COSINE..."
-              class="px-3.5 py-2 rounded-lg bg-navy-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 w-full sm:w-64"
-            />
-            <label for="pub-year-filter" class="sr-only">Filter publications by year</label>
-            <select
-              id="pub-year-filter"
-              class="px-3.5 py-2 rounded-lg bg-navy-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-sky-400"
-            >
-              <option value="ALL">All Years (2013–2026)</option>
-              <option value="2026">2026</option>
-              <option value="2025">2025</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-              <option value="2021">2021</option>
-              <option value="2020">2020</option>
-              <option value="2019">2019</option>
-              <option value="2018">2018</option>
-              <option value="2017">2017</option>
-              <option value="2016">2016</option>
-              <option value="2015">2015</option>
-              <option value="2013">2013</option>
-            </select>
+          <!-- Role Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Filter publications by author role">
+            <button type="button" data-role-filter="ALL" aria-pressed="true" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-sky-500/20 border-sky-400/50 text-sky-300">
+              All (<span id="count-all">80</span>)
+            </button>
+            <button type="button" data-role-filter="LEAD" aria-pressed="false" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-navy-900/80 border-slate-700 text-slate-300 hover:border-slate-500">
+              First or Corresponding (<span id="count-lead">0</span>)
+            </button>
+            <button type="button" data-role-filter="FIRST" aria-pressed="false" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-navy-900/80 border-slate-700 text-slate-300 hover:border-sky-400/40">
+              First Author (<span id="count-first">0</span>)
+            </button>
+            <button type="button" data-role-filter="CORR" aria-pressed="false" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-navy-900/80 border-slate-700 text-slate-300 hover:border-amber-400/40">
+              Corresponding Author (<span id="count-corr">0</span>)
+            </button>
           </div>
         </div>
-
         <div id="publications-container" class="space-y-10" aria-live="polite"></div>
       </div>
     </section>
@@ -926,10 +943,43 @@
       { num: 80, year: "2013", firstAuthor: false, corrAuthor: false, authors: "S. K. Kang <em>et al</em>.", title: "Four-Neutrino Analysis of 1.5 km Baseline Reactor Antineutrino Oscillations", venue: "Adv. High Energy Phys. <strong>2013</strong>, 138109 (2013)", url: "https://onlinelibrary.wiley.com/doi/10.1155/2013/138109" }
     ];
 
-    const container = document.getElementById('publications-container');
+const container = document.getElementById('publications-container');
     const searchInput = document.getElementById('pub-search');
     const yearSelect = document.getElementById('pub-year-filter');
     const countSpan = document.getElementById('pub-count');
+    const roleButtons = document.querySelectorAll('.role-filter-btn');
+    let selectedRole = 'ALL';
+
+    // Update static role counts on buttons
+    document.getElementById('count-all').textContent = PUBLICATIONS.length;
+    document.getElementById('count-lead').textContent = PUBLICATIONS.filter(p => p.firstAuthor || p.corrAuthor).length;
+    document.getElementById('count-first').textContent = PUBLICATIONS.filter(p => p.firstAuthor).length;
+    document.getElementById('count-corr').textContent = PUBLICATIONS.filter(p => p.corrAuthor).length;
+
+    function updateRoleButtonStyles() {
+      roleButtons.forEach(btn => {
+        const isActive = btn.dataset.roleFilter === selectedRole;
+        btn.setAttribute('aria-pressed', String(isActive));
+        btn.className = 'role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition ';
+        if (isActive) {
+          if (selectedRole === 'CORR') {
+            btn.className += 'bg-amber-500/20 border-amber-400/50 text-amber-300';
+          } else {
+            btn.className += 'bg-sky-500/20 border-sky-400/50 text-sky-300';
+          }
+        } else {
+          btn.className += 'bg-navy-900/80 border-slate-700 text-slate-300 hover:border-slate-500';
+        }
+      });
+    }
+
+    roleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        selectedRole = btn.dataset.roleFilter;
+        updateRoleButtonStyles();
+        renderPublications();
+      });
+    });
 
     function renderRoleBadges(pub) {
       const badges = [];
@@ -946,15 +996,26 @@
     function renderPublications() {
       const query = searchInput.value.trim().toLowerCase();
       const selectedYear = yearSelect.value;
-      const isFiltered = Boolean(query) || selectedYear !== 'ALL';
+      const isFiltered = Boolean(query) || selectedYear !== 'ALL' || selectedRole !== 'ALL';
 
       const filtered = PUBLICATIONS.filter(pub => {
         const matchesYear = selectedYear === 'ALL' || pub.year === selectedYear;
-        const plainText = (pub.authors + ' ' + pub.title + ' ' + pub.venue + ' ' + pub.year)
+        const matchesRole =
+          selectedRole === 'ALL' ||
+          (selectedRole === 'LEAD' && (pub.firstAuthor || pub.corrAuthor)) ||
+          (selectedRole === 'FIRST' && pub.firstAuthor) ||
+          (selectedRole === 'CORR' && pub.corrAuthor);
+
+        const roleKeywords = [
+          pub.firstAuthor ? 'first author' : '',
+          pub.corrAuthor ? 'corresponding author *' : ''
+        ].join(' ');
+
+        const plainText = (pub.authors + ' ' + pub.title + ' ' + pub.venue + ' ' + pub.year + ' ' + roleKeywords)
           .replace(/<[^>]*>/g, '')
           .toLowerCase();
         const matchesQuery = !query || plainText.includes(query);
-        return matchesYear && matchesQuery;
+        return matchesYear && matchesRole && matchesQuery;
       });
 
       countSpan.textContent = filtered.length;
