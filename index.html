@@ -104,7 +104,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="pb-20 sm:pb-16">
     <!-- Hero Section -->
     <section id="home" class="pt-32 pb-20 sm:pt-40 sm:pb-28 px-4 sm:px-6 lg:px-8 border-b border-slate-800/60 relative overflow-hidden">
       <div class="max-w-5xl mx-auto text-center">
@@ -681,19 +681,24 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-navy-900/90 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 text-center">
-    <div class="max-w-4xl mx-auto space-y-2.5 text-sm text-slate-400">
-      <p class="text-base font-semibold text-white">
-        <a href="https://physics.jejunu.ac.kr/" target="_blank" rel="noopener" class="text-sky-400 hover:underline">Department of Physics</a>,
-        <a href="https://www.jejunu.ac.kr/" target="_blank" rel="noopener" class="text-sky-400 hover:underline">Jeju National University</a>
-      </p>
-      <p>Jeju National University, 102 Jejudaehak-ro, Jeju-si, Jeju Special Self-Governing Province 63243, Republic of Korea</p>
-      <p>
-        Contact: (Email) <a href="mailto:yjkophys@jejunu.ac.kr" class="text-slate-200 underline hover:text-sky-400">yjkophys@jejunu.ac.kr</a>
-        &nbsp;·&nbsp; (Tel) <span class="text-slate-200">+82-64-754-3515</span>
-      </p>
-      <p class="pt-3 font-display font-semibold text-slate-300">RIP Lab @ Jeju National University</p>
+  <!-- Fixed Bottom Footer -->
+  <footer class="fixed bottom-0 inset-x-0 z-40 bg-navy-950/90 backdrop-blur-md border-t border-slate-800/80 py-2.5 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-xs text-slate-400">
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-2 gap-y-0.5 text-center sm:text-left">
+        <span class="font-display font-semibold text-slate-200">RIP Lab</span>
+        <span class="text-slate-600">@</span>
+        <span>
+          <a href="https://physics.jejunu.ac.kr/" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-medium">Department of Physics</a>,
+          <a href="https://www.jejunu.ac.kr/" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-medium">Jeju National University</a>
+        </span>
+        <span class="hidden lg:inline text-slate-600">·</span>
+        <span class="hidden lg:inline text-slate-400">102 Jejudaehak-ro, Jeju-si 63243, Korea</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center sm:justify-end gap-x-3 gap-y-0.5">
+        <span>Email: <a href="mailto:yjkophys@jejunu.ac.kr" class="text-slate-200 underline hover:text-sky-400">yjkophys@jejunu.ac.kr</a></span>
+        <span class="text-slate-600">·</span>
+        <span>Tel: <span class="text-slate-200">+82-64-754-3515</span></span>
+      </div>
     </div>
   </footer>
 
