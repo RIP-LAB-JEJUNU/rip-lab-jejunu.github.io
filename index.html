@@ -63,6 +63,13 @@
     .nav-link.active {
       color: #38bdf8;
     }
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+    }
+    .bullet-list > li {
+      padding-left: 0.15rem;
+    }
   </style>
 </head>
 <body class="font-sans antialiased selection:bg-sky-500/30 selection:text-sky-200 cosmic-bg">
@@ -164,8 +171,8 @@
           <!-- COSINE -->
           <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
             <div>
-              <div class="h-44 bg-navy-900/90 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
-                <img src="images/cosine.jpg" alt="COSINE Experiment" class="w-full h-full object-cover" onerror="this.parentElement.style.display='none'" />
+              <div class="h-48 bg-navy-950/90 border-b border-slate-800/90 p-3 flex items-center justify-center">
+                <img src="images/cosine.jpg" alt="COSINE Experiment" class="max-h-full max-w-full w-auto h-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-3">
@@ -185,8 +192,8 @@
           <!-- NEOS -->
           <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
             <div>
-              <div class="h-44 bg-navy-900/90 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
-                <img src="images/neos.jpg" alt="NEOS Experiment" class="w-full h-full object-cover" onerror="this.parentElement.style.display='none'" />
+              <div class="h-48 bg-navy-950/90 border-b border-slate-800/90 p-3 flex items-center justify-center">
+                <img src="images/neos.jpg" alt="NEOS Experiment" class="max-h-full max-w-full w-auto h-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-3">
@@ -204,8 +211,8 @@
           <!-- NEON -->
           <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
             <div>
-              <div class="h-44 bg-navy-900/90 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
-                <img src="images/neon.jpg" alt="NEON Experiment" class="w-full h-full object-cover" onerror="this.parentElement.style.display='none'" />
+              <div class="h-48 bg-navy-950/90 border-b border-slate-800/90 p-3 flex items-center justify-center">
+                <img src="images/neon.jpg" alt="NEON Experiment" class="max-h-full max-w-full w-auto h-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-3">
@@ -225,8 +232,8 @@
           <!-- AMoRE -->
           <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
             <div>
-              <div class="h-44 bg-navy-900/90 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
-                <img src="images/amore.png" alt="AMoRE Experiment" class="w-full h-full object-cover" onerror="this.parentElement.style.display='none'" />
+              <div class="h-48 bg-navy-950/90 border-b border-slate-800/90 p-3 flex items-center justify-center">
+                <img src="images/amore.png" alt="AMoRE Experiment" class="max-h-full max-w-full w-auto h-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-3">
@@ -246,8 +253,8 @@
           <!-- DUNE -->
           <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between">
             <div>
-              <div class="h-44 bg-navy-900/90 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
-                <img src="images/dune.png" alt="DUNE Experiment" class="w-full h-full object-cover" onerror="this.parentElement.style.display='none'" />
+              <div class="h-48 bg-navy-950/90 border-b border-slate-800/90 p-3 flex items-center justify-center">
+                <img src="images/dune.png" alt="DUNE Experiment" class="max-h-full max-w-full w-auto h-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-3">
@@ -267,8 +274,8 @@
           <!-- Jeju Muon Tomography & Detector R&D -->
           <article class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between border-sky-500/30">
             <div>
-              <div class="h-44 bg-navy-900/90 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
-                <img src="images/muon-rd.jpg" alt="Muon Tomography & Detector R&D" class="w-full h-full object-cover" onerror="this.parentElement.style.display='none'" />
+              <div class="h-48 bg-navy-950/90 border-b border-slate-800/90 p-3 flex items-center justify-center">
+                <img src="images/muon-rd.jpg" alt="Muon Tomography & Detector R&D" class="max-h-full max-w-full w-auto h-auto object-contain rounded-lg" onerror="this.parentElement.style.display='none'" />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-3">
@@ -304,8 +311,8 @@
         <div class="glass-card rounded-2xl p-6 sm:p-8 mb-10 border-sky-500/30">
           <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
-              <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="images/youngjuko.jpg" alt="Prof. Young Ju Ko" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                <img src="images/youngjuko.jpg" alt="Prof. Young Ju Ko" class="max-w-full max-h-full w-auto h-auto object-contain rounded-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <span style="display:none;" class="font-display text-2xl font-bold text-sky-400 items-center justify-center w-full h-full">YJK</span>
               </div>
               <div>
@@ -367,8 +374,8 @@
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-start justify-between gap-4 mb-4">
               <div class="flex items-center gap-4">
-                <div class="w-16 h-16 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                  <img src="images/heloise.jpg" alt="Héloïse Pimbert" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                  <img src="images/heloise.jpg" alt="Héloïse Pimbert" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                   <span style="display:none;" class="font-display text-lg font-bold text-indigo-300 items-center justify-center w-full h-full">HP</span>
                 </div>
                 <div>
@@ -378,7 +385,7 @@
               </div>
               <span class="px-2.5 py-1 rounded-md bg-indigo-500/15 text-indigo-300 text-xs font-semibold shrink-0">NEON</span>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1 mb-4">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5 mb-4">
               <li>Estimation of <sup>40</sup>K contamination in NEON</li>
               <li>R&amp;D for CsI crystal at low temperature</li>
               <li>Neutrino magnetic moment search for NEON</li>
@@ -388,7 +395,7 @@
               <p><strong class="text-slate-200">Collaboration:</strong> NEON Collaboration (2025 – Present, R&amp;D, data analysis)</p>
               <div>
                 <strong class="text-slate-200 block mb-1">Presentations:</strong>
-                <ul class="list-disc list-inside space-y-1 text-slate-300">
+                <ul class="bullet-list space-y-1.5 text-slate-300">
                   <li><a href="https://www.kps.or.kr/conference/event/content/program/search_result_abstract_poster.php?id=17472&tid=2532" target="_blank" rel="noopener" class="underline hover:text-sky-400">Search for the Neutrino Magnetic Moment with the NEON Experiment</a> @ <a href="https://www.kps.or.kr/conference/event/" target="_blank" rel="noopener" class="underline hover:text-sky-400">2026 KPS Fall Meeting</a></li>
                   <li><a href="https://www.kps.or.kr/conference/event/content/program/search_result_abstract_poster.php?id=16083&tid=2293" target="_blank" rel="noopener" class="underline hover:text-sky-400">Progress in the Characterization of Intrinsic 40K for the NEON Experiment</a> @ <a href="https://www.kps.or.kr/conference/event/index.php?cfrid=26#" target="_blank" rel="noopener" class="underline hover:text-sky-400">2026 KPS Spring Meeting</a></li>
                 </ul>
@@ -400,8 +407,8 @@
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-start justify-between gap-4 mb-4">
               <div class="flex items-center gap-4">
-                <div class="w-16 h-16 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                  <img src="images/sehwan.jpg" alt="Se Hwan Lee" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                  <img src="images/sehwan.jpg" alt="Se Hwan Lee" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                   <span style="display:none;" class="font-display text-lg font-bold text-sky-300 items-center justify-center w-full h-full">SHL</span>
                 </div>
                 <div>
@@ -411,7 +418,7 @@
               </div>
               <span class="px-2.5 py-1 rounded-md bg-sky-500/15 text-sky-300 text-xs font-semibold shrink-0">COSINE-100U</span>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1 mb-4">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5 mb-4">
               <li>Measuring light yield of COSINE-100U liquid scintillator</li>
               <li>R&amp;D for Stilbene crystal</li>
               <li>Dark matter search via liquid scintillator detector</li>
@@ -422,7 +429,8 @@
               <p><strong class="text-slate-200">Collaboration &amp; Training:</strong> COSINE-100U Collaboration (2025 – Present); IBS CUP Internship (2025.07–08, 2026.01–02)</p>
               <div>
                 <strong class="text-slate-200 block mb-1">Publications &amp; Presentations:</strong>
-                <ul class="list-disc list-inside space-y-1 text-slate-300">
+                <ul class="bullet-list space-y-1.5 text-slate-300">
+                  <li><a href="https://arxiv.org/abs/2608.17276" target="_blank" rel="noopener" class="underline hover:text-sky-400">Scintillation Properties of a Stilbene Crystal for Low-Mass Dark Matter Searches</a> (S.H. Lee <em>et al.</em>, submitted to <em>IEEE Trans. Nucl. Sci.</em>, arXiv:2608.17276)</li>
                   <li>S. H. Lee <em>et al.</em>, "Light Yield Performance of Liquid Scintillator for the COSINE-100 Upgrade", accepted by <em>New Physics: Sae Mulli</em>.</li>
                   <li><a href="https://www.kps.or.kr/conference/event/content/program/search_result_abstract.php?id=17323&tid=2557" target="_blank" rel="noopener" class="underline hover:text-sky-400">Scintillation Properties and Pulse Shape Discrimination of a Stilbene Crystal for Low-Mass Dark Matter Search</a> @ <a href="https://www.kps.or.kr/conference/event/" target="_blank" rel="noopener" class="underline hover:text-sky-400">2026 KPS Fall Meeting</a></li>
                   <li><a href="https://www.kps.or.kr/conference/event/content/program/search_result_abstract_poster.php?id=18380&tid=2532" target="_blank" rel="noopener" class="underline hover:text-sky-400">Characterization of Ultima Gold F Liquid Scintillator for Low-Mass Dark Matter Search</a> @ <a href="https://www.kps.or.kr/conference/event/" target="_blank" rel="noopener" class="underline hover:text-sky-400">2026 KPS Fall Meeting</a></li>
@@ -441,8 +449,8 @@
           <!-- Ye Ryoung Lee -->
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-center gap-3.5 mb-3">
-              <div class="w-14 h-14 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="images/yeryoung.jpg" alt="Ye Ryoung Lee" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                <img src="images/yeryoung.jpg" alt="Ye Ryoung Lee" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <span style="display:none;" class="font-display text-sm font-bold text-sky-300 items-center justify-center w-full h-full">YRL</span>
               </div>
               <div>
@@ -450,7 +458,7 @@
                 <p class="text-sky-400 text-xs font-medium">Undergraduate Student @ JejuNU</p>
               </div>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1 mb-3">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5 mb-3">
               <li>Cosmic muon simulation for muon tomography</li>
             </ul>
             <p class="text-xs text-slate-400 border-t border-slate-800 pt-2.5">
@@ -461,8 +469,8 @@
           <!-- Jae Woong Jang -->
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-center gap-3.5 mb-3">
-              <div class="w-14 h-14 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="images/jaewoong.png" alt="Jae Woong Jang" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                <img src="images/jaewoong.png" alt="Jae Woong Jang" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <span style="display:none;" class="font-display text-sm font-bold text-sky-300 items-center justify-center w-full h-full">JWJ</span>
               </div>
               <div>
@@ -470,7 +478,7 @@
                 <p class="text-sky-400 text-xs font-medium">Undergraduate Student @ JejuNU</p>
               </div>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5">
               <li>Simulation studies for opaque liquid scintillator (OLS)-based reactor neutrino experiment</li>
             </ul>
           </div>
@@ -478,8 +486,8 @@
           <!-- Yu Hyun Shin -->
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-center gap-3.5 mb-3">
-              <div class="w-14 h-14 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="images/yuhyun.jpg" alt="Yu Hyun Shin" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                <img src="images/yuhyun.jpg" alt="Yu Hyun Shin" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <span style="display:none;" class="font-display text-sm font-bold text-sky-300 items-center justify-center w-full h-full">YHS</span>
               </div>
               <div>
@@ -487,7 +495,7 @@
                 <p class="text-sky-400 text-xs font-medium">Undergraduate Student @ JejuNU</p>
               </div>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5">
               <li>Simulation studies for opaque liquid scintillator (OLS)-based reactor neutrino experiment</li>
             </ul>
           </div>
@@ -495,8 +503,8 @@
           <!-- Yerim Yi -->
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-center gap-3.5 mb-3">
-              <div class="w-14 h-14 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="images/yerim.jpg" alt="Yerim Yi" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                <img src="images/yerim.jpg" alt="Yerim Yi" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <span style="display:none;" class="font-display text-sm font-bold text-sky-300 items-center justify-center w-full h-full">YY</span>
               </div>
               <div>
@@ -504,7 +512,7 @@
                 <p class="text-sky-400 text-xs font-medium">Undergraduate Student @ JejuNU</p>
               </div>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5">
               <li>Literature study on dark matter and astroparticle physics</li>
               <li>Interest in astrophysics and dark matter</li>
             </ul>
@@ -513,8 +521,8 @@
           <!-- Sheng Wen Ji -->
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-center gap-3.5 mb-3">
-              <div class="w-14 h-14 rounded-xl bg-navy-900 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center">
-                <img src="images/shengwen.jpg" alt="Sheng Wen Ji" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl bg-navy-950/80 border border-slate-700/80 overflow-hidden shrink-0 flex items-center justify-center p-1">
+                <img src="images/shengwen.jpg" alt="Sheng Wen Ji" class="max-w-full max-h-full w-auto h-auto object-contain rounded-lg" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
                 <span style="display:none;" class="font-display text-sm font-bold text-sky-300 items-center justify-center w-full h-full">SWJ</span>
               </div>
               <div>
@@ -522,7 +530,7 @@
                 <p class="text-sky-400 text-xs font-medium">Undergraduate Student @ JejuNU</p>
               </div>
             </div>
-            <ul class="list-disc list-inside text-slate-300 text-sm space-y-1">
+            <ul class="bullet-list text-slate-300 text-sm space-y-1.5">
               <li>Literature study on dark matter and astroparticle physics</li>
               <li>Interest in cosmology and the early universe</li>
             </ul>
