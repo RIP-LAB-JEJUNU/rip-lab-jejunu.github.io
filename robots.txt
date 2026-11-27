@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rip-lab-jejunu.github.io/sitemap.xml
