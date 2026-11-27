@@ -70,15 +70,15 @@
     .bullet-list > li {
       padding-left: 0.15rem;
     }
-.portrait-frame {
-  overflow: hidden;
-}
-.portrait-img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
+    .portrait-frame {
+      overflow: hidden;
+    }
+    .portrait-img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
   </style>
 </head>
 <body class="font-sans antialiased selection:bg-sky-500/30 selection:text-sky-200 cosmic-bg">
@@ -324,11 +324,10 @@
         <div class="glass-card rounded-2xl p-6 sm:p-8 mb-10 border-sky-500/30">
           <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-slate-800">
             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5">
-              <!-- 기존: w-28 h-32 sm:w-32 sm:h-36 -->
-<div class="portrait-frame h-32 sm:h-36 rounded-2xl bg-navy-950/80 border border-slate-700/80 shrink-0 flex items-center justify-center">
-  <img src="images/youngjuko.jpg" alt="Prof. Young Ju Ko" class="portrait-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-  <span style="display:none;" class="font-display text-2xl font-bold text-sky-400 items-center justify-center w-28 h-full">YJK</span>
-</div>
+              <div class="portrait-frame h-32 sm:h-36 rounded-2xl bg-navy-950/80 border border-slate-700/80 shrink-0 flex items-center justify-center">
+                <img src="images/youngjuko.jpg" alt="Prof. Young Ju Ko" class="portrait-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <span style="display:none;" class="font-display text-2xl font-bold text-sky-400 items-center justify-center w-28 h-full">YJK</span>
+              </div>
               <div>
                 <span class="inline-block px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 text-xs font-semibold mb-2">Principal Investigator</span>
                 <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">Prof. Young Ju Ko</h3>
@@ -460,7 +459,7 @@
         <!-- Undergraduate Students -->
         <h3 class="font-display text-xl font-bold text-white mb-5">Undergraduate Researchers</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Ye Ryoung Lee -->
+          <!-- Ye Ryoung Lee -->
           <div class="glass-card rounded-2xl p-6">
             <div class="flex items-center gap-3.5 mb-3">
               <div class="portrait-frame w-16 h-20 sm:w-20 sm:h-24 rounded-xl bg-navy-950/80 border border-slate-700/80 shrink-0 flex items-center justify-center">
@@ -562,7 +561,7 @@
     <!-- Publications Section -->
     <section id="publications" class="py-20 px-4 sm:px-6 lg:px-8 border-b border-slate-800/60">
       <div class="max-w-5xl mx-auto">
-<div class="flex flex-col gap-4 mb-8">
+        <div class="flex flex-col gap-4 mb-8">
           <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div>
               <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Publications</h2>
@@ -609,17 +608,1095 @@
               All (<span id="count-all">80</span>)
             </button>
             <button type="button" data-role-filter="LEAD" aria-pressed="false" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-navy-900/80 border-slate-700 text-slate-300 hover:border-slate-500">
-              First or Corresponding (<span id="count-lead">0</span>)
+              First or Corresponding (<span id="count-lead">16</span>)
             </button>
             <button type="button" data-role-filter="FIRST" aria-pressed="false" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-navy-900/80 border-slate-700 text-slate-300 hover:border-sky-400/40">
-              First Author (<span id="count-first">0</span>)
+              First Author (<span id="count-first">5</span>)
             </button>
             <button type="button" data-role-filter="CORR" aria-pressed="false" class="role-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold border transition bg-navy-900/80 border-slate-700 text-slate-300 hover:border-amber-400/40">
-              Corresponding Author (<span id="count-corr">0</span>)
+              Corresponding Author (<span id="count-corr">11</span>)
             </button>
           </div>
         </div>
-        <div id="publications-container" class="space-y-10" aria-live="polite"></div>
+
+        <!-- Static HTML Publications List (80 papers, 2026–2013) -->
+        <div id="publications-container" class="space-y-10" aria-live="polite">
+          <!-- 2026 -->
+          <div class="pub-year-group" data-year="2026">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2026</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 j. kim et al. [cosine-100 collaboration] achieving a 0.49 kev threshold in the cosine-100 dark matter experiment submitted to eur. phys. j. c arxiv:2610.19668 [hep-ex] (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">80.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. Kim <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Achieving a 0.49 keV threshold in the COSINE-100 dark matter experiment”</p>
+                      <p class="text-sm"><a href="https://arxiv.org/abs/2610.19668" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">submitted to Eur. Phys. J. C · arXiv:2610.19668 [hep-ex] (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 s.h. lee et al. scintillation properties of a stilbene crystal for low-mass dark matter searches submitted to ieee trans. nucl. sci. arxiv:2608.17276 [physics.ins-det] (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">79.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">S.H. Lee</strong> <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Scintillation Properties of a Stilbene Crystal for Low-Mass Dark Matter Searches”</p>
+                      <p class="text-sm"><a href="https://arxiv.org/abs/2608.17276" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">submitted to IEEE Trans. Nucl. Sci. · arXiv:2608.17276 [physics.ins-det] (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 d. lee et al. development and initial performance of an upgraded nai(tl) crystal encapsulation for cosine-100u submitted to ieee trans. nucl. sci. arxiv:2608.11678 [physics.ins-det] (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">78.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">D. Lee <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Development and Initial Performance of an Upgraded NaI(Tl) Crystal Encapsulation for COSINE-100U”</p>
+                      <p class="text-sm"><a href="https://arxiv.org/abs/2608.11678" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">submitted to IEEE Trans. Nucl. Sci. · arXiv:2608.11678 [physics.ins-det] (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 a. agrawal et al. [amore collaboration] a study of neutrinoless double electron capture in 40ca from the amore experiment submitted to eur. phys. j. c arxiv:2607.08039 [nucl-ex] (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">77.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">A. Agrawal <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“A study of neutrinoless double electron capture in <sup>40</sup>Ca from the AMoRE experiment”</p>
+                      <p class="text-sm"><a href="https://arxiv.org/abs/2607.08039" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">submitted to Eur. Phys. J. C · arXiv:2607.08039 [nucl-ex] (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="1" data-search="2026 w.k. kim et al. [cosine-100 collaboration] probing unexplored spin-dependent dark matter-proton coupling with few-photoelectron threshold in cosine-100 submitted to phys. rev. d arxiv:2603.22411 [hep-ex] (2026) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">76.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">W.K. Kim <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Probing unexplored spin-dependent dark matter-proton coupling with few-photoelectron threshold in COSINE-100”</p>
+                      <p class="text-sm"><a href="https://arxiv.org/abs/2603.22411" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">submitted to Phys. Rev. D · arXiv:2603.22411 [hep-ex] (2026) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 j. seo et al. search for 7li solar axion with li2moo4 detectors in the amore-i experiment phys. lett. b 883, 141123 (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">75.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. Seo <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Search for <sup>7</sup>Li solar axion with Li₂MoO₄ detectors in the AMoRE-I experiment”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/pii/S0370269326009743" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Lett. B <strong>883</strong>, 141123 (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 s. kim et al. expected performance of a water cherenkov detector for reactor antineutrino--electron scattering j. instrum. 21, p10043 (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">74.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">S. Kim <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Expected performance of a water Cherenkov detector for reactor antineutrino--electron scattering”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/21/10/P10043" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>21</strong>, P10043 (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 k. choi et al. new physics opportunities at neutrino facilities: bsm physics at accelerator, atmospheric, and reactor neutrino experiments rep. prog. phys. 89, 084201 (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">73.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">K. Choi <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“New Physics Opportunities at Neutrino Facilities: BSM Physics at Accelerator, Atmospheric, and Reactor Neutrino Experiments”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1361-6633/ae916b" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Rep. Prog. Phys. <strong>89</strong>, 084201 (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 n. carlin et al. [cosine-100 collaboration] constraints on sub-gev dark matter scattering on electrons with cosine-100 phys. rev. d 113, 072012 (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">72.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">N. Carlin <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Constraints on sub-GeV dark matter scattering on electrons with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/kszv-g7tl" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>113</strong>, 072012 (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 k. park et al. validation of the cosine-100u nai(tl) encapsulation for low-temperature operation in liquid scintillator j. instrum. 21, t03010 (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">71.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">K. Park <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Validation of the COSINE-100U NaI(Tl) Encapsulation for Low-Temperature Operation in Liquid Scintillator”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/21/03/T03010" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>21</strong>, T03010 (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2026" data-first="0" data-corr="0" data-search="2026 s. chen et al. the νeye neutrino telescope: conceptual design report arxiv:2601.12569 [hep-ex] (2026)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">70.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">S. Chen <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“The νEYE Neutrino Telescope: Conceptual Design Report”</p>
+                      <p class="text-sm"><a href="https://arxiv.org/abs/2601.12569" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">arXiv:2601.12569 [hep-ex] (2026) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2025 -->
+          <div class="pub-year-group" data-year="2025">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2025</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 g.h. yu et al. [cosine-100 collaboration] limits on wimp dark matter with nai(tl) crystals in three years of cosine-100 data phys. rev. lett. 135, 231001 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">69.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G.H. Yu <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Limits on WIMP Dark Matter with NaI(Tl) Crystals in Three Years of COSINE-100 Data”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/77p2-rnbw" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>135</strong>, 231001 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 n. carlin et al. [cosine-100 collaboration] combined annual modulation dark matter search with cosine-100 and anais-112 phys. rev. lett. 135, 121002 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">68.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">N. Carlin <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Combined Annual Modulation Dark Matter Search with COSINE-100 and ANAIS-112”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/accepted/10.1103/9j7w-qp1c" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>135</strong>, 121002 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="1" data-search="2025 n. carlin et al. [cosine-100 collaboration] cosine-100 full dataset challenges the annual modulation signal of dama/libra sci. adv. 11, eadv6503 (2025) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">67.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">N. Carlin <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA”</p>
+                      <p class="text-sm"><a href="https://www.science.org/doi/10.1126/sciadv.adv6503" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Sci. Adv. <strong>11</strong>, eadv6503 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="1" data-corr="0" data-search="2025 young ju ko optimizing sterile neutrino searches: impact of position resolution in short-baseline reactor experiments j. korean phys. soc. 87, 955-961 (2025) first author">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">66.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">Young Ju Ko</strong></p>
+                      <p class="font-semibold text-white">“Optimizing sterile neutrino searches: impact of position resolution in short-baseline reactor experiments”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1007/s40042-025-01448-w" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Korean Phys. Soc. <strong>87</strong>, 955-961 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 w.k. kim et al. scintillation characteristics of an undoped csi crystal at low-temperature for dark matter search astropart. phys. 173, 103150 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">65.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">W.K. Kim <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Scintillation characteristics of an undoped CsI crystal at low-temperature for dark matter search”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/pii/S0927650525000738" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>173</strong>, 103150 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="1" data-search="2025 j. kim et al. radiopurity measurements of liquid scintillator for the cosine-100 upgrade j. instrum. 20, t06006 (2025) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">64.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. Kim <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Radiopurity measurements of liquid scintillator for the COSINE-100 Upgrade”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/20/06/T06006" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>20</strong>, T06006 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 byung ju park et al. [neon collaboration] new constraints on axionlike particles with the neon detector at a nuclear reactor phys. rev. lett. 134, 201002 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">63.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">Byung Ju Park <em>et al</em>. [NEON Collaboration]</p>
+                      <p class="font-semibold text-white">“New Constraints on axionlike particles with the NEON detector at a nuclear reactor”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.201002" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>134</strong>, 201002 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 doohyeok lee et al. upgrading the cosine-100 experiment for enhanced sensitivity to low-mass dark matter detection commun. phys. 8, 135 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">62.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">Doohyeok Lee <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Upgrading the COSINE-100 experiment for enhanced sensitivity to low-mass dark matter detection”</p>
+                      <p class="text-sm"><a href="https://www.nature.com/articles/s42005-025-02067-4" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Commun. Phys. <strong>8</strong>, 135 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 a. agrawal et al. [amore collaboration] improved limit on neutrinoless double beta decay of 100mo from amore-i phys. rev. lett. 134, 082501 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">61.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">A. Agrawal <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“Improved Limit on Neutrinoless Double Beta Decay of <sup>100</sup>Mo from AMoRE-I”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.082501" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>134</strong>, 082501 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 a. agrawal et al. [amore collaboration] development of mmc-based lithium molybdate cryogenic calorimeters for amore-ii eur. phys. j. c 85, 172 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">60.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">A. Agrawal <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“Development of MMC-based lithium molybdate cryogenic calorimeters for AMoRE-II”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-024-13498-8" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>85</strong>, 172 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 g. h. yu et al. [cosine-100 collaboration] improved background modeling for dark matter search with cosine-100 eur. phys. j. c 85, 32 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">59.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. H. Yu <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Improved background modeling for dark matter search with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-025-13775-0" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>85</strong>, 32 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="1" data-search="2025 j. j. choi et al. [neon collaboration] first direct search for light dark matter using the neon experiment at a nuclear reactor phys. rev. lett. 134, 021802 (2025) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">58.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. J. Choi <em>et al</em>. [NEON Collaboration]</p>
+                      <p class="font-semibold text-white">“First Direct Search for Light Dark Matter Using the NEON Experiment at a Nuclear Reactor”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.021802" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>134</strong>, 021802 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2025" data-first="0" data-corr="0" data-search="2025 a. agrawal et al. [amore collaboration] projected background and sensitivity of amore-ii eur. phys. j. c 85, 9 (2025)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">57.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">A. Agrawal <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“Projected background and sensitivity of AMoRE-II”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-024-13516-9" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>85</strong>, 9 (2025) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2024 -->
+          <div class="pub-year-group" data-year="2024">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2024</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="1" data-search="2024 g.h. yu et al. [cosine-100 collaboration] lowering threshold of nai(tl) scintillator to 0.7 kev in the cosine-100 experiment j. instrum. 19, p12013 (2024) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">56.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G.H. Yu <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Lowering threshold of NaI(Tl) scintillator to 0.7 keV in the COSINE-100 experiment”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/19/12/P12013" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>19</strong>, P12013 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="0" data-search="2024 j.j. choi et al. [neon collaboration] upgrade of the nai(tl) crystal encapsulation for the neon experiment j. instrum. 19, p10020 (2024)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">55.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J.J. Choi <em>et al</em>. [NEON Collaboration]</p>
+                      <p class="font-semibold text-white">“Upgrade of the NaI(Tl) crystal encapsulation for the NEON experiment”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/19/10/P10020" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>19</strong>, P10020 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="0" data-search="2024 a. agrawal et al. [amore collaboration] background study of the amore-pilot experiment astropart. phys. 162, 102991 (2024)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">54.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">A. Agrawal <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“Background Study of the AMoRE-pilot experiment”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/pii/S0927650524000689" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>162</strong>, 102991 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="1" data-search="2024 seunghyeok jang et al. νoscillation: a software package for computation and simulation of neutrino oscillation and detection j. korean phys. soc. 85, 381-388 (2024) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">53.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">Seunghyeok Jang <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“νOscillation: a software package for computation and simulation of neutrino oscillation and detection”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1007/s40042-024-01120-9" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Korean Phys. Soc. <strong>85</strong>, 381-388 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="1" data-search="2024 j.j. choi et al. waveform simulation for scintillation characteristics of nai(tl) crystal nucl. instrum. methods phys. res. sec. a 1065, 169489 (2024) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">52.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J.J. Choi <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Waveform simulation for scintillation characteristics of NaI(Tl) crystal”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/pii/S0168900224004157" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1065</strong>, 169489 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="0" data-search="2024 s. h. lee et al. measurements of low-energy nuclear recoil quenching factors for na and i recoils in the nai(tl) scintillator phys. rev. c 110, 014614 (2024)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">51.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">S. H. Lee <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Measurements of low-energy nuclear recoil quenching factors for Na and I recoils in the NaI(Tl) scintillator”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prc/abstract/10.1103/PhysRevC.110.014614" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. C <strong>110</strong>, 014614 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="0" data-search="2024 g. adhikari et al. [cosine-100 collaboration] alpha backgrounds in nai(tl) crystals of cosine-100 astropart. phys. 158, 102945 (2024)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">50.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Alpha backgrounds in NaI(Tl) crystals of COSINE-100”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/pii/S0927650524000227" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>158</strong>, 102945 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2024" data-first="0" data-corr="1" data-search="2024 s. m. lee et al. [cosine-100 collaboration] nonproportionality of nai(tl) scintillation detector for dark matter search experiments eur. phys. j. c 84, 484 (2024) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">49.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">S. M. Lee <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Nonproportionality of NaI(Tl) scintillation detector for dark matter search experiments”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-024-12770-1" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>84</strong>, 484 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2023 -->
+          <div class="pub-year-group" data-year="2023">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2023</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 g. adhikari et al. [cosine-100 collaboration] search for boosted dark matter in cosine-100 phys. rev. lett. 131, 201802 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">48.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Search for Boosted Dark Matter in COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.201802" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>131</strong>, 201802 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 g. adhikari et al. [cosine-100 collaboration] search for inelastic wimp-iodine scattering with cosine-100 phys. rev. d 108, 092006 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">47.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Search for inelastic WIMP-iodine scattering with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.092006" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>108</strong>, 092006 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 p. adrich et al. [gbar collaboration] production of antihydrogen atoms by 6 kev antiprotons through a positronium cloud eur. phys. j. c 83, 1004 (2023) · erratum: eur. phys. j. c 84, 1143 (2024)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">46.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">P. Adrich <em>et al</em>. [GBAR Collaboration]</p>
+                      <p class="font-semibold text-white">“Production of antihydrogen atoms by 6 keV antiprotons through a positronium cloud”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-023-12137-y" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>83</strong>, 1004 (2023) · Erratum: Eur. Phys. J. C <strong>84</strong>, 1143 (2024) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="1" data-corr="0" data-search="2023 y.j. ko and h.s. lee sensitivities for coherent elastic scattering of solar and supernova neutrinos with future nai(tl) dark matter search detectors of cosine-200/1t astropart. phys. 153, 102890 (2023) first author">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">45.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">Y.J. Ko</strong> and H.S. Lee</p>
+                      <p class="font-semibold text-white">“Sensitivities for coherent elastic scattering of solar and supernova neutrinos with future NaI(Tl) dark matter search detectors of COSINE-200/1T”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0927650523000762" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>153</strong>, 102890 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="1" data-search="2023 g. adhikari et al. [cosine-100 collaboration] search for bosonic super-weakly interacting massive particles at cosine-100 phys. rev. d 108, l041301 (2023) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">44.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Search for bosonic super-weakly interacting massive particles at COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.L041301" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>108</strong>, L041301 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 g. adhikari et al. search for solar bosonic dark matter annual modulation with cosine-100 phys. rev. d 107, 122004 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">43.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Search for solar bosonic dark matter annual modulation with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.122004" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>107</strong>, 122004 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 g. adhikari et al. an induced annual modulation signature in cosine-100 data by dama/libra’s analysis method sci. rep. 13, 4676 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">42.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“An induced annual modulation signature in COSINE-100 data by DAMA/LIBRA’s analysis method”</p>
+                      <p class="text-sm"><a href="https://www.nature.com/articles/s41598-023-31688-4" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Sci. Rep. <strong>13</strong>, 4676 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 j.j. choi et al. exploring coherent elastic neutrino-nucleus scattering using reactor electron antineutrinos in the neon experiment eur. phys. j. c 83, 226 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">41.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J.J. Choi <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Exploring coherent elastic neutrino-nucleus scattering using reactor electron antineutrinos in the NEON experiment”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-023-11352-x" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>83</strong>, 226 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 k.y. jung et al. pulse shape discrimination using a convolutional neural network for organic liquid scintillator signals j. instrum. 18, p03003 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">40.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">K.Y. Jung <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Pulse shape discrimination using a convolutional neural network for organic liquid scintillator signals”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/18/03/P03003" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>18</strong>, P03003 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2023" data-first="0" data-corr="0" data-search="2023 h. lee et al. performance of an ultra-pure nai(tl) detector produced by an indigenously-developed purification method and crystal growth for the cosine-200 experiment front. phys. 11, 1142765 (2023)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">39.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">H. Lee <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Performance of an ultra-pure NaI(Tl) detector produced by an indigenously-developed purification method and crystal growth for the COSINE-200 experiment”</p>
+                      <p class="text-sm"><a href="https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2023.1142765/full" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Front. Phys. <strong>11</strong>, 1142765 (2023) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2022 -->
+          <div class="pub-year-group" data-year="2022">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2022</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2022" data-first="0" data-corr="0" data-search="2022 v. alenkov et al. [amore collaboration] alpha backgrounds in the amore-pilot experiment eur. phys. j. c 82, 1140 (2022)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">38.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">V. Alenkov <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“Alpha backgrounds in the AMoRE-Pilot experiment”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-022-11104-3" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>82</strong>, 1140 (2022) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2022" data-first="0" data-corr="0" data-search="2022 p. blumer et al. [gbar collaboration] positron accumulation in the gbar experiment nucl. instrum. methods phys. res. sec. a 1040, 167263 (2022)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">37.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">P. Blumer <em>et al</em>. [GBAR Collaboration]</p>
+                      <p class="font-semibold text-white">“Positron accumulation in the GBAR experiment”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/pii/S0168900222006027" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1040</strong>, 167263 (2022) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2022" data-first="0" data-corr="0" data-search="2022 g. adhikari et al. [cosine collaboration] three-year annual modulation search with cosine-100 phys. rev. d 106, 052005 (2022)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">36.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE Collaboration]</p>
+                      <p class="font-semibold text-white">“Three-year annual modulation search with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.052005" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>106</strong>, 052005 (2022) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2022" data-first="0" data-corr="0" data-search="2022 z. atif et al. [reno and neos collaboration] search for sterile neutrino oscillation using reno and neos data phys. rev. d 105, l111101 (2022)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">35.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">Z. Atif <em>et al</em>. [RENO and NEOS Collaboration]</p>
+                      <p class="font-semibold text-white">“Search for sterile neutrino oscillation using RENO and NEOS data”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.L111101" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>105</strong>, L111101 (2022) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2022" data-first="0" data-corr="1" data-search="2022 g. adhikari et al. [cosine-100 collaboration] searching for low-mass dark matter via migdal effect in cosine-100 phys. rev. d 105, 042006 (2022) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">34.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Searching for low-mass dark matter via Migdal effect in COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.042006" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>105</strong>, 042006 (2022) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2022" data-first="0" data-corr="0" data-search="2022 h. kim et al. [cosine-100 collaboration] the environmental monitoring system at the cosine-100 experiment j. instrum. 17, t01001 (2022)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">33.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">H. Kim <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“The environmental monitoring system at the COSINE-100 experiment”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/17/01/T01001" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>17</strong>, T01001 (2022) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2021 -->
+          <div class="pub-year-group" data-year="2021">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2021</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="0" data-corr="1" data-search="2021 g. adhikari et al. [cosine-100 collaboration] strong constraints from cosine-100 on the dama dark matter results using the same sodium iodide target sci. adv. 7, eabk2699 (2021) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">32.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Strong constraints from COSINE-100 on the DAMA dark matter results using the same sodium iodide target”</p>
+                      <p class="text-sm"><a href="https://www.science.org/doi/10.1126/sciadv.abk2699" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Sci. Adv. <strong>7</strong>, eabk2699 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="1" data-corr="0" data-search="2021 y.j. ko and h.k. park remarks on boson super-wimps search experiments phys. rev. d 104, 083030 (2021) first author">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">31.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">Y.J. Ko</strong> and H.K. Park</p>
+                      <p class="font-semibold text-white">“Remarks on boson super-WIMPs search experiments”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.083030" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. D <strong>104</strong>, 083030 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="0" data-corr="1" data-search="2021 g. adhikari et al. [cosine-100 collaboration] background modeling for dark matter search with 1.7 years of cosine-100 data eur. phys. j. c 81, 837 (2021) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">30.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Background modeling for dark matter search with 1.7 years of COSINE-100 data”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-021-09564-0" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>81</strong>, 837 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="0" data-corr="1" data-search="2021 k.w. kim et al. [cosine-100 collaboration] identification of new isomers in 228ac: impact on dark matter searches eur. phys. j. c 81, 746 (2021) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">29.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">K.W. Kim <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Identification of new isomers in <sup>228</sup>Ac: Impact on dark matter searches”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-021-09473-2" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>81</strong>, 746 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="0" data-corr="0" data-search="2021 g. adhikari et al. [cosine-100 collaboration] the cosine-100 liquid scintillator veto system nucl. instrum. methods phys. res. sec. a 1006, 165431 (2021)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">28.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“The COSINE-100 liquid scintillator veto system”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900221004150" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1006</strong>, 165431 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="0" data-corr="1" data-search="2021 g. adhikari et al. [cosine-100 collaboration] lowering the energy threshold in cosine-100 dark matter searches astropart. phys. 130, 102581 (2021) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">27.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Lowering the energy threshold in COSINE-100 dark matter searches”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0927650521000256" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>130</strong>, 102581 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2021" data-first="0" data-corr="0" data-search="2021 a. husson et al. [gbar collaboration] a pulsed high-voltage decelerator system to deliver low-energy antiprotons nucl. instrum. methods phys. res. sec. a 1002, 165245 (2021)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">26.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">A. Husson <em>et al</em>. [GBAR Collaboration]</p>
+                      <p class="font-semibold text-white">“A pulsed high-voltage decelerator system to deliver low-energy antiprotons”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900221002291" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1002</strong>, 165245 (2021) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2020 -->
+          <div class="pub-year-group" data-year="2020">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2020</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 h. prihtiadi et al. [cosine-100 collaboration] measurement of the cosmic muon annual and diurnal flux variation with the cosine-100 detector j. cosmol. astropart. phys. 02, 013 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">25.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">H. Prihtiadi <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Measurement of the cosmic muon annual and diurnal flux variation with the COSINE-100 detector”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1475-7516/2021/02/013" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Cosmol. Astropart. Phys. <strong>02</strong>, 013 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 m. chalton et al. [gbar collaboration] positron production using a 9 mev electron linac for the gbar experiment nucl. instrum. methods phys. res. sec. a 985, 164657 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">24.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">M. Chalton <em>et al</em>. [GBAR Collaboration]</p>
+                      <p class="font-semibold text-white">“Positron production using a 9 MeV electron linac for the GBAR experiment”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900220310548" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>985</strong>, 164657 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 j.j. choi et al. improving the light collection using a new nai(tl) crystal encapsulation nucl. instrum. methods phys. res. sec. a 981, 164556 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">23.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J.J. Choi <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Improving the light collection using a new NaI(Tl) crystal encapsulation”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900220309530" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>981</strong>, 164556 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 y. jeong et al. [neos collaboration] pulse-shape discrimination of fast neutron background using convolutional neural network for neos ii j. korean phys. soc. 77, 1118 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">22.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">Y. Jeong <em>et al</em>. [NEOS Collaboration]</p>
+                      <p class="font-semibold text-white">“Pulse-shape Discrimination of Fast Neutron Background using Convolutional Neural Network for NEOS II”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.3938/jkps.77.1118" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Korean Phys. Soc. <strong>77</strong>, 1118 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 b.j. park et al. development of ultra-pure nai(tl) detectors for the cosine-200 experiment eur. phys. j. c 80, 814 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">21.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">B.J. Park <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Development of ultra-pure NaI(Tl) detectors for the COSINE-200 experiment”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-020-8386-8" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>80</strong>, 814 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 b.h. kim et al. performance of the time-of-flight detector for a measurement of free fall of antihydrogen at the gbar experiment nucl. instrum. methods phys. res. sec. a 973, 164162 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">20.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">B.H. Kim <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Performance of the time-of-flight detector for a measurement of free fall of antihydrogen at the GBAR experiment”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900220305581" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>973</strong>, 164162 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2020" data-first="0" data-corr="0" data-search="2020 e. barbosa de souza et al. [cosine-100 collaboration] study of cosmogenic radionuclides in the cosine-100 nai(tl) detectors astropart. phys. 115, 102390 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">19.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">E. Barbosa de Souza <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Study of cosmogenic radionuclides in the COSINE-100 NaI(Tl) detectors”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0927650519301938" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>115</strong>, 102390 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2019 -->
+          <div class="pub-year-group" data-year="2019">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2019</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="0" data-corr="0" data-search="2019 p. adhikari et al. [cosine-100 collaboration] a search for solar axion induced signals with cosine-100 astropart. phys. 114, 101-106 (2020)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">18.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">P. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“A search for solar axion induced signals with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0927650519301124" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Astropart. Phys. <strong>114</strong>, 101-106 (2020) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="1" data-corr="0" data-search="2019 y.j. ko et al. [cosine-100 collaboration] comparison between dama/libra and cosine-100 in the light of quenching factors j. cosmol. astropart. phys. 11, 008 (2019) first author">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">17.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">Y.J. Ko</strong> <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Comparison between DAMA/LIBRA and COSINE-100 in the light of Quenching Factors”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1475-7516/2019/11/008" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Cosmol. Astropart. Phys. <strong>11</strong>, 008 (2019) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="0" data-corr="0" data-search="2019 v. alenkov et al. [amore collaboration] first result from the amore-pilot neutrinoless double beta decay experiment eur. phys. j. c 79, 791 (2019)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">16.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">V. Alenkov <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“First result from the AMoRE-Pilot neutrinoless double beta decay experiment”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1140/epjc/s10052-019-7279-1" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Eur. Phys. J. C <strong>79</strong>, 791 (2019) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="0" data-corr="0" data-search="2019 g. adhikari et al. [cosine-100 collaboration] search for a dark matter-induced annual modulation signal in nai(tl) with the cosine-100 experiment phys. rev. lett. 123, 031302 (2019)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">15.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“Search for a dark matter-induced annual modulation signal in NaI(Tl) with the COSINE-100 experiment”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.031302" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>123</strong>, 031302 (2019) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="0" data-corr="0" data-search="2019 g. adhikari et al. [cosine-100 collaboration] cosine-100 and dama/libra-phase2 in wimp effective models j. cosmol. astropart. phys. 06, 048 (2019)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">14.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“COSINE-100 and DAMA/LIBRA-phase2 in WIMP effective models”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1475-7516/2019/06/048" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Cosmol. Astropart. Phys. <strong>06</strong>, 048 (2019) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="0" data-corr="0" data-search="2019 c. ha et al. [cosine-100 collaboration] first direct search for inelastic boosted dark matter with cosine-100 phys. rev. lett. 122, 131802 (2019)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">13.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">C. Ha <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“First Direct Search for Inelastic Boosted Dark Matter with COSINE-100”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.131802" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>122</strong>, 131802 (2019) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2019" data-first="0" data-corr="0" data-search="2019 k. w. kim et al. [kims collaboration] limits on interactions between weakly interacting massive particles and nucleons obtained with nai(tl) crystal detectors j. high energy phys. 2019, 194 (2019)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">12.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">K. W. Kim <em>et al</em>. [KIMS Collaboration]</p>
+                      <p class="font-semibold text-white">“Limits on Interactions between Weakly Interacting Massive Particles and Nucleons Obtained with NaI(Tl) crystal Detectors”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.99.091301" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. High Energy Phys. <strong>2019</strong>, 194 (2019) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2018 -->
+          <div class="pub-year-group" data-year="2018">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2018</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2018" data-first="0" data-corr="0" data-search="2018 c. h. jang et al. neutrinoless double beta decay and light sterile neutrino j. korean phys. soc. 73, 1625 (2018)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">11.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">C. H. Jang <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Neutrinoless Double Beta Decay and Light Sterile Neutrino”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.3938/jkps.73.1625" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Korean Phys. Soc. <strong>73</strong>, 1625 (2018) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2018" data-first="0" data-corr="0" data-search="2018 g. adhikari et al. [cosine-100 collaboration] an experiment to search for dark-matter interactions using sodium iodide detectors nature 564, 83-86 (2018)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">10.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]</p>
+                      <p class="font-semibold text-white">“An experiment to search for dark-matter interactions using sodium iodide detectors”</p>
+                      <p class="text-sm"><a href="https://www.nature.com/articles/s41586-018-0739-1" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nature <strong>564</strong>, 83-86 (2018) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2018" data-first="0" data-corr="1" data-search="2018 g. adhikari et al. study of fast neutron detector for cosine-100 experiment j. instrum. 13, t06005 (2018) corresponding author *">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">9.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">G. Adhikari <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Study of fast neutron detector for COSINE-100 experiment”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/1748-0221/13/06/T06005" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Instrum. <strong>13</strong>, T06005 (2018) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2017 -->
+          <div class="pub-year-group" data-year="2017">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2017</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2017" data-first="1" data-corr="0" data-search="2017 y. j. ko et al. [neos collaboration] sterile neutrino search at the neos experiment phys. rev. lett. 118, 121802 (2017) first author">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">8.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">Y. J. Ko</strong> <em>et al</em>. [NEOS Collaboration]</p>
+                      <p class="font-semibold text-white">“Sterile Neutrino Search at the NEOS Experiment”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.121802" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>118</strong>, 121802 (2017) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span></div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2016 -->
+          <div class="pub-year-group" data-year="2016">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2016</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2016" data-first="1" data-corr="0" data-search="2016 y. j. ko et al. [neos collaboration] comparison of fast neutron rates for the neos experiment j. korean phys. soc. 69, 1651 (2016) first author">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">7.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300"><strong class="text-white">Y. J. Ko</strong> <em>et al</em>. [NEOS Collaboration]</p>
+                      <p class="font-semibold text-white">“Comparison of Fast Neutron Rates for the NEOS Experiment”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.3938/jkps.69.1651" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Korean Phys. Soc. <strong>69</strong>, 1651 (2016) ↗</a></p>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap gap-1.5 shrink-0"><span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span></div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2016" data-first="0" data-corr="0" data-search="2016 j. h. choi et al. [reno collaboration] observation of energy and baseline dependent reactor antineutrino disappearance in the reno experiment phys. rev. lett. 116, 211801 (2016)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">6.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. H. Choi <em>et al</em>. [RENO Collaboration]</p>
+                      <p class="font-semibold text-white">“Observation of Energy and Baseline Dependent Reactor Antineutrino Disappearance in the RENO Experiment”</p>
+                      <p class="text-sm"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.211801" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Rev. Lett. <strong>116</strong>, 211801 (2016) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2016" data-first="0" data-corr="0" data-search="2016 j. y. lee et al. [amore collaboration] a study of radioactive contamination of 40ca100moo4 crystals for the amore experiment ieee trans. nucl. sci. 63, 543-547 (2016)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">5.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. Y. Lee <em>et al</em>. [AMoRE Collaboration]</p>
+                      <p class="font-semibold text-white">“A Study of Radioactive Contamination of <sup>40</sup>Ca<sup>100</sup>MoO<sub>4</sub> Crystals for the AMoRE Experiment”</p>
+                      <p class="text-sm"><a href="https://ieeexplore.ieee.org/document/7454879" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">IEEE Trans. Nucl. Sci. <strong>63</strong>, 543-547 (2016) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2016" data-first="0" data-corr="0" data-search="2016 b. r. kim et al. [neos collaboration] development and mass production of a mixture of lab and din- based gadolinium-loaded liquid scintillator for the neos short-baseline neutrino experiment j. radioanal. nucl. chem. 310, 311-316 (2016)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">4.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">B. R. Kim <em>et al</em>. [NEOS Collaboration]</p>
+                      <p class="font-semibold text-white">“Development and Mass Production of a Mixture of LAB and DIN- based Gadolinium-loaded Liquid Scintillator for the NEOS Short-baseline Neutrino Experiment”</p>
+                      <p class="text-sm"><a href="https://link.springer.com/article/10.1007/s10967-016-4826-1" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">J. Radioanal. Nucl. Chem. <strong>310</strong>, 311-316 (2016) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2016" data-first="0" data-corr="0" data-search="2016 j. h. choi et al. [reno collaboration] slow control systems of the reactor experiment for neutrino oscillation nucl. instrum. methods phys. res. sec. a 810, 100-106 (2016)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">3.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">J. H. Choi <em>et al</em>. [RENO Collaboration]</p>
+                      <p class="font-semibold text-white">“Slow Control Systems of the Reactor Experiment for Neutrino Oscillation”</p>
+                      <p class="text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168900215015715" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Nucl. Instrum. Methods Phys. Res. Sec. A <strong>810</strong>, 100-106 (2016) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2015 -->
+          <div class="pub-year-group" data-year="2015">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2015</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2015" data-first="0" data-corr="0" data-search="2015 b. r. kim et al. [neos collaboration] pulse shape discrimination capability of metal-loaded organic liquid scintillators for a short-baseline reactor neutrino experiment phys. scr. 90, 055302 (2015)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">2.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">B. R. Kim <em>et al</em>. [NEOS Collaboration]</p>
+                      <p class="font-semibold text-white">“Pulse Shape Discrimination Capability of Metal-loaded Organic Liquid Scintillators for a Short-baseline Reactor Neutrino Experiment”</p>
+                      <p class="text-sm"><a href="https://iopscience.iop.org/article/10.1088/0031-8949/90/5/055302" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Phys. Scr. <strong>90</strong>, 055302 (2015) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- 2013 -->
+          <div class="pub-year-group" data-year="2013">
+            <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">2013</h3>
+            <ol class="space-y-3">
+              <li class="pub-item glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base" data-year="2013" data-first="0" data-corr="0" data-search="2013 s. k. kang et al. four-neutrino analysis of 1.5 km baseline reactor antineutrino oscillations adv. high energy phys. 2013, 138109 (2013)">
+                <div class="flex items-start justify-between gap-3">
+                  <div class="flex items-start gap-3 min-w-0">
+                    <span class="pub-num font-display font-bold text-sky-400 min-w-[2rem] shrink-0">1.</span>
+                    <div class="space-y-1 min-w-0">
+                      <p class="text-slate-300">S. K. Kang <em>et al</em>.</p>
+                      <p class="font-semibold text-white">“Four-Neutrino Analysis of 1.5 km Baseline Reactor Antineutrino Oscillations”</p>
+                      <p class="text-sm"><a href="https://onlinelibrary.wiley.com/doi/10.1155/2013/138109" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">Adv. High Energy Phys. <strong>2013</strong>, 138109 (2013) ↗</a></p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div id="pub-empty-state" class="hidden glass-card rounded-xl p-8 text-center text-slate-400">
+          No publications matched your filter criteria.
+        </div>
       </div>
     </section>
 
@@ -839,128 +1916,28 @@
     </div>
   </footer>
 
-  <!-- Publications Data & Rendering Script -->
+  <!-- Publications Filtering Script for Static HTML List -->
   <script>
-    const PUBLICATIONS = [
-      // 2026
-      { num: 1, year: "2026", firstAuthor: false, corrAuthor: false, authors: "J. Kim <em>et al</em>. [COSINE-100 Collaboration]", title: "Achieving a 0.49 keV threshold in the COSINE-100 dark matter experiment", venue: "submitted to Eur. Phys. J. C · arXiv:2610.19668 [hep-ex] (2026)", url: "https://arxiv.org/abs/2610.19668" },
-      { num: 2, year: "2026", firstAuthor: false, corrAuthor: false, authors: "<strong class='text-white'>S.H. Lee</strong> <em>et al</em>.", title: "Scintillation Properties of a Stilbene Crystal for Low-Mass Dark Matter Searches", venue: "submitted to IEEE Trans. Nucl. Sci. · arXiv:2608.17276 [physics.ins-det] (2026)", url: "https://arxiv.org/abs/2608.17276" },
-      { num: 3, year: "2026", firstAuthor: false, corrAuthor: false, authors: "D. Lee <em>et al</em>.", title: "Development and Initial Performance of an Upgraded NaI(Tl) Crystal Encapsulation for COSINE-100U", venue: "submitted to IEEE Trans. Nucl. Sci. · arXiv:2608.11678 [physics.ins-det] (2026)", url: "https://arxiv.org/abs/2608.11678" },
-      { num: 4, year: "2026", firstAuthor: false, corrAuthor: false, authors: "A. Agrawal <em>et al</em>. [AMoRE Collaboration]", title: "A study of neutrinoless double electron capture in <sup>40</sup>Ca from the AMoRE experiment", venue: "submitted to Eur. Phys. J. C · arXiv:2607.08039 [nucl-ex] (2026)", url: "https://arxiv.org/abs/2607.08039" },
-      { num: 5, year: "2026", firstAuthor: false, corrAuthor: true, authors: "W.K. Kim <em>et al</em>. [COSINE-100 Collaboration]", title: "Probing unexplored spin-dependent dark matter-proton coupling with few-photoelectron threshold in COSINE-100", venue: "submitted to Phys. Rev. D · arXiv:2603.22411 [hep-ex] (2026)", url: "https://arxiv.org/abs/2603.22411" },
-      { num: 6, year: "2026", firstAuthor: false, corrAuthor: false, authors: "J. Seo <em>et al</em>.", title: "Search for <sup>7</sup>Li solar axion with Li₂MoO₄ detectors in the AMoRE-I experiment", venue: "Phys. Lett. B <strong>883</strong>, 141123 (2026)", url: "https://www.sciencedirect.com/science/article/pii/S0370269326009743" },
-      { num: 7, year: "2026", firstAuthor: false, corrAuthor: false, authors: "S. Kim <em>et al</em>.", title: "Expected performance of a water Cherenkov detector for reactor antineutrino--electron scattering", venue: "J. Instrum. <strong>21</strong>, P10043 (2026)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/21/10/P10043" },
-      { num: 8, year: "2026", firstAuthor: false, corrAuthor: false, authors: "K. Choi <em>et al</em>.", title: "New Physics Opportunities at Neutrino Facilities: BSM Physics at Accelerator, Atmospheric, and Reactor Neutrino Experiments", venue: "Rep. Prog. Phys. <strong>89</strong>, 084201 (2026)", url: "https://iopscience.iop.org/article/10.1088/1361-6633/ae916b" },
-      { num: 9, year: "2026", firstAuthor: false, corrAuthor: false, authors: "N. Carlin <em>et al</em>. [COSINE-100 Collaboration]", title: "Constraints on sub-GeV dark matter scattering on electrons with COSINE-100", venue: "Phys. Rev. D <strong>113</strong>, 072012 (2026)", url: "https://journals.aps.org/prd/abstract/10.1103/kszv-g7tl" },
-      { num: 10, year: "2026", firstAuthor: false, corrAuthor: false, authors: "K. Park <em>et al</em>.", title: "Validation of the COSINE-100U NaI(Tl) Encapsulation for Low-Temperature Operation in Liquid Scintillator", venue: "J. Instrum. <strong>21</strong>, T03010 (2026)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/21/03/T03010" },
-      { num: 11, year: "2026", firstAuthor: false, corrAuthor: false, authors: "S. Chen <em>et al</em>.", title: "The νEYE Neutrino Telescope: Conceptual Design Report", venue: "arXiv:2601.12569 [hep-ex] (2026)", url: "https://arxiv.org/abs/2601.12569" },
-
-      // 2025
-      { num: 12, year: "2025", firstAuthor: false, corrAuthor: false, authors: "G.H. Yu <em>et al</em>. [COSINE-100 Collaboration]", title: "Limits on WIMP Dark Matter with NaI(Tl) Crystals in Three Years of COSINE-100 Data", venue: "Phys. Rev. Lett. <strong>135</strong>, 231001 (2025)", url: "https://journals.aps.org/prl/abstract/10.1103/77p2-rnbw" },
-      { num: 13, year: "2025", firstAuthor: false, corrAuthor: false, authors: "N. Carlin <em>et al</em>. [COSINE-100 Collaboration]", title: "Combined Annual Modulation Dark Matter Search with COSINE-100 and ANAIS-112", venue: "Phys. Rev. Lett. <strong>135</strong>, 121002 (2025)", url: "https://journals.aps.org/prl/accepted/10.1103/9j7w-qp1c" },
-      { num: 14, year: "2025", firstAuthor: false, corrAuthor: true, authors: "N. Carlin <em>et al</em>. [COSINE-100 Collaboration]", title: "COSINE-100 Full Dataset Challenges the Annual Modulation Signal of DAMA/LIBRA", venue: "Sci. Adv. <strong>11</strong>, eadv6503 (2025)", url: "https://www.science.org/doi/10.1126/sciadv.adv6503" },
-      { num: 15, year: "2025", firstAuthor: true, corrAuthor: false, authors: "<strong class='text-white'>Young Ju Ko</strong>", title: "Optimizing sterile neutrino searches: impact of position resolution in short-baseline reactor experiments", venue: "J. Korean Phys. Soc. <strong>87</strong>, 955-961 (2025)", url: "https://link.springer.com/article/10.1007/s40042-025-01448-w" },
-      { num: 16, year: "2025", firstAuthor: false, corrAuthor: false, authors: "W.K. Kim <em>et al</em>.", title: "Scintillation characteristics of an undoped CsI crystal at low-temperature for dark matter search", venue: "Astropart. Phys. <strong>173</strong>, 103150 (2025)", url: "https://www.sciencedirect.com/science/article/pii/S0927650525000738" },
-      { num: 17, year: "2025", firstAuthor: false, corrAuthor: true, authors: "J. Kim <em>et al</em>.", title: "Radiopurity measurements of liquid scintillator for the COSINE-100 Upgrade", venue: "J. Instrum. <strong>20</strong>, T06006 (2025)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/20/06/T06006" },
-      { num: 18, year: "2025", firstAuthor: false, corrAuthor: false, authors: "Byung Ju Park <em>et al</em>. [NEON Collaboration]", title: "New Constraints on axionlike particles with the NEON detector at a nuclear reactor", venue: "Phys. Rev. Lett. <strong>134</strong>, 201002 (2025)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.201002" },
-      { num: 19, year: "2025", firstAuthor: false, corrAuthor: false, authors: "Doohyeok Lee <em>et al</em>.", title: "Upgrading the COSINE-100 experiment for enhanced sensitivity to low-mass dark matter detection", venue: "Commun. Phys. <strong>8</strong>, 135 (2025)", url: "https://www.nature.com/articles/s42005-025-02067-4" },
-      { num: 20, year: "2025", firstAuthor: false, corrAuthor: false, authors: "A. Agrawal <em>et al</em>. [AMoRE Collaboration]", title: "Improved Limit on Neutrinoless Double Beta Decay of <sup>100</sup>Mo from AMoRE-I", venue: "Phys. Rev. Lett. <strong>134</strong>, 082501 (2025)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.082501" },
-      { num: 21, year: "2025", firstAuthor: false, corrAuthor: false, authors: "A. Agrawal <em>et al</em>. [AMoRE Collaboration]", title: "Development of MMC-based lithium molybdate cryogenic calorimeters for AMoRE-II", venue: "Eur. Phys. J. C <strong>85</strong>, 172 (2025)", url: "https://link.springer.com/article/10.1140/epjc/s10052-024-13498-8" },
-      { num: 22, year: "2025", firstAuthor: false, corrAuthor: false, authors: "G. H. Yu <em>et al</em>. [COSINE-100 Collaboration]", title: "Improved background modeling for dark matter search with COSINE-100", venue: "Eur. Phys. J. C <strong>85</strong>, 32 (2025)", url: "https://link.springer.com/article/10.1140/epjc/s10052-025-13775-0" },
-      { num: 23, year: "2025", firstAuthor: false, corrAuthor: true, authors: "J. J. Choi <em>et al</em>. [NEON Collaboration]", title: "First Direct Search for Light Dark Matter Using the NEON Experiment at a Nuclear Reactor", venue: "Phys. Rev. Lett. <strong>134</strong>, 021802 (2025)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.021802" },
-      { num: 24, year: "2025", firstAuthor: false, corrAuthor: false, authors: "A. Agrawal <em>et al</em>. [AMoRE Collaboration]", title: "Projected background and sensitivity of AMoRE-II", venue: "Eur. Phys. J. C <strong>85</strong>, 9 (2025)", url: "https://link.springer.com/article/10.1140/epjc/s10052-024-13516-9" },
-
-      // 2024
-      { num: 25, year: "2024", firstAuthor: false, corrAuthor: true, authors: "G.H. Yu <em>et al</em>. [COSINE-100 Collaboration]", title: "Lowering threshold of NaI(Tl) scintillator to 0.7 keV in the COSINE-100 experiment", venue: "J. Instrum. <strong>19</strong>, P12013 (2024)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/19/12/P12013" },
-      { num: 26, year: "2024", firstAuthor: false, corrAuthor: false, authors: "J.J. Choi <em>et al</em>. [NEON Collaboration]", title: "Upgrade of the NaI(Tl) crystal encapsulation for the NEON experiment", venue: "J. Instrum. <strong>19</strong>, P10020 (2024)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/19/10/P10020" },
-      { num: 27, year: "2024", firstAuthor: false, corrAuthor: false, authors: "A. Agrawal <em>et al</em>. [AMoRE Collaboration]", title: "Background Study of the AMoRE-pilot experiment", venue: "Astropart. Phys. <strong>162</strong>, 102991 (2024)", url: "https://www.sciencedirect.com/science/article/pii/S0927650524000689" },
-      { num: 28, year: "2024", firstAuthor: false, corrAuthor: true, authors: "Seunghyeok Jang <em>et al</em>.", title: "νOscillation: a software package for computation and simulation of neutrino oscillation and detection", venue: "J. Korean Phys. Soc. <strong>85</strong>, 381-388 (2024)", url: "https://link.springer.com/article/10.1007/s40042-024-01120-9" },
-      { num: 29, year: "2024", firstAuthor: false, corrAuthor: true, authors: "J.J. Choi <em>et al</em>.", title: "Waveform simulation for scintillation characteristics of NaI(Tl) crystal", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1065</strong>, 169489 (2024)", url: "https://www.sciencedirect.com/science/article/pii/S0168900224004157" },
-      { num: 30, year: "2024", firstAuthor: false, corrAuthor: false, authors: "S. H. Lee <em>et al</em>.", title: "Measurements of low-energy nuclear recoil quenching factors for Na and I recoils in the NaI(Tl) scintillator", venue: "Phys. Rev. C <strong>110</strong>, 014614 (2024)", url: "https://journals.aps.org/prc/abstract/10.1103/PhysRevC.110.014614" },
-      { num: 31, year: "2024", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Alpha backgrounds in NaI(Tl) crystals of COSINE-100", venue: "Astropart. Phys. <strong>158</strong>, 102945 (2024)", url: "https://www.sciencedirect.com/science/article/pii/S0927650524000227" },
-      { num: 32, year: "2024", firstAuthor: false, corrAuthor: true, authors: "S. M. Lee <em>et al</em>. [COSINE-100 Collaboration]", title: "Nonproportionality of NaI(Tl) scintillation detector for dark matter search experiments", venue: "Eur. Phys. J. C <strong>84</strong>, 484 (2024)", url: "https://link.springer.com/article/10.1140/epjc/s10052-024-12770-1" },
-
-      // 2023
-      { num: 33, year: "2023", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Search for Boosted Dark Matter in COSINE-100", venue: "Phys. Rev. Lett. <strong>131</strong>, 201802 (2023)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.201802" },
-      { num: 34, year: "2023", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Search for inelastic WIMP-iodine scattering with COSINE-100", venue: "Phys. Rev. D <strong>108</strong>, 092006 (2023)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.092006" },
-      { num: 35, year: "2023", firstAuthor: false, corrAuthor: false, authors: "P. Adrich <em>et al</em>. [GBAR Collaboration]", title: "Production of antihydrogen atoms by 6 keV antiprotons through a positronium cloud", venue: "Eur. Phys. J. C <strong>83</strong>, 1004 (2023) · Erratum: Eur. Phys. J. C <strong>84</strong>, 1143 (2024)", url: "https://link.springer.com/article/10.1140/epjc/s10052-023-12137-y" },
-      { num: 36, year: "2023", firstAuthor: true, corrAuthor: false, authors: "<strong class='text-white'>Y.J. Ko</strong> and H.S. Lee", title: "Sensitivities for coherent elastic scattering of solar and supernova neutrinos with future NaI(Tl) dark matter search detectors of COSINE-200/1T", venue: "Astropart. Phys. <strong>153</strong>, 102890 (2023)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0927650523000762" },
-      { num: 37, year: "2023", firstAuthor: false, corrAuthor: true, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Search for bosonic super-weakly interacting massive particles at COSINE-100", venue: "Phys. Rev. D <strong>108</strong>, L041301 (2023)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.L041301" },
-      { num: 38, year: "2023", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>.", title: "Search for solar bosonic dark matter annual modulation with COSINE-100", venue: "Phys. Rev. D <strong>107</strong>, 122004 (2023)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.107.122004" },
-      { num: 39, year: "2023", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>.", title: "An induced annual modulation signature in COSINE-100 data by DAMA/LIBRA’s analysis method", venue: "Sci. Rep. <strong>13</strong>, 4676 (2023)", url: "https://www.nature.com/articles/s41598-023-31688-4" },
-      { num: 40, year: "2023", firstAuthor: false, corrAuthor: false, authors: "J.J. Choi <em>et al</em>.", title: "Exploring coherent elastic neutrino-nucleus scattering using reactor electron antineutrinos in the NEON experiment", venue: "Eur. Phys. J. C <strong>83</strong>, 226 (2023)", url: "https://link.springer.com/article/10.1140/epjc/s10052-023-11352-x" },
-      { num: 41, year: "2023", firstAuthor: false, corrAuthor: false, authors: "K.Y. Jung <em>et al</em>.", title: "Pulse shape discrimination using a convolutional neural network for organic liquid scintillator signals", venue: "J. Instrum. <strong>18</strong>, P03003 (2023)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/18/03/P03003" },
-      { num: 42, year: "2023", firstAuthor: false, corrAuthor: false, authors: "H. Lee <em>et al</em>.", title: "Performance of an ultra-pure NaI(Tl) detector produced by an indigenously-developed purification method and crystal growth for the COSINE-200 experiment", venue: "Front. Phys. <strong>11</strong>, 1142765 (2023)", url: "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2023.1142765/full" },
-
-      // 2022
-      { num: 43, year: "2022", firstAuthor: false, corrAuthor: false, authors: "V. Alenkov <em>et al</em>. [AMoRE Collaboration]", title: "Alpha backgrounds in the AMoRE-Pilot experiment", venue: "Eur. Phys. J. C <strong>82</strong>, 1140 (2022)", url: "https://link.springer.com/article/10.1140/epjc/s10052-022-11104-3" },
-      { num: 44, year: "2022", firstAuthor: false, corrAuthor: false, authors: "P. Blumer <em>et al</em>. [GBAR Collaboration]", title: "Positron accumulation in the GBAR experiment", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1040</strong>, 167263 (2022)", url: "https://www.sciencedirect.com/science/article/pii/S0168900222006027" },
-      { num: 45, year: "2022", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE Collaboration]", title: "Three-year annual modulation search with COSINE-100", venue: "Phys. Rev. D <strong>106</strong>, 052005 (2022)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.052005" },
-      { num: 46, year: "2022", firstAuthor: false, corrAuthor: false, authors: "Z. Atif <em>et al</em>. [RENO and NEOS Collaboration]", title: "Search for sterile neutrino oscillation using RENO and NEOS data", venue: "Phys. Rev. D <strong>105</strong>, L111101 (2022)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.L111101" },
-      { num: 47, year: "2022", firstAuthor: false, corrAuthor: true, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Searching for low-mass dark matter via Migdal effect in COSINE-100", venue: "Phys. Rev. D <strong>105</strong>, 042006 (2022)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.042006" },
-      { num: 48, year: "2022", firstAuthor: false, corrAuthor: false, authors: "H. Kim <em>et al</em>. [COSINE-100 Collaboration]", title: "The environmental monitoring system at the COSINE-100 experiment", venue: "J. Instrum. <strong>17</strong>, T01001 (2022)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/17/01/T01001" },
-
-      // 2021
-      { num: 49, year: "2021", firstAuthor: false, corrAuthor: true, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Strong constraints from COSINE-100 on the DAMA dark matter results using the same sodium iodide target", venue: "Sci. Adv. <strong>7</strong>, eabk2699 (2021)", url: "https://www.science.org/doi/10.1126/sciadv.abk2699" },
-      { num: 50, year: "2021", firstAuthor: true, corrAuthor: false, authors: "<strong class='text-white'>Y.J. Ko</strong> and H.K. Park", title: "Remarks on boson super-WIMPs search experiments", venue: "Phys. Rev. D <strong>104</strong>, 083030 (2021)", url: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.083030" },
-      { num: 51, year: "2021", firstAuthor: false, corrAuthor: true, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Background modeling for dark matter search with 1.7 years of COSINE-100 data", venue: "Eur. Phys. J. C <strong>81</strong>, 837 (2021)", url: "https://link.springer.com/article/10.1140/epjc/s10052-021-09564-0" },
-      { num: 52, year: "2021", firstAuthor: false, corrAuthor: true, authors: "K.W. Kim <em>et al</em>. [COSINE-100 Collaboration]", title: "Identification of new isomers in <sup>228</sup>Ac: Impact on dark matter searches", venue: "Eur. Phys. J. C <strong>81</strong>, 746 (2021)", url: "https://link.springer.com/article/10.1140/epjc/s10052-021-09473-2" },
-      { num: 53, year: "2021", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "The COSINE-100 liquid scintillator veto system", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1006</strong>, 165431 (2021)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0168900221004150" },
-      { num: 54, year: "2021", firstAuthor: false, corrAuthor: true, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Lowering the energy threshold in COSINE-100 dark matter searches", venue: "Astropart. Phys. <strong>130</strong>, 102581 (2021)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0927650521000256" },
-      { num: 55, year: "2021", firstAuthor: false, corrAuthor: false, authors: "A. Husson <em>et al</em>. [GBAR Collaboration]", title: "A pulsed high-voltage decelerator system to deliver low-energy antiprotons", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>1002</strong>, 165245 (2021)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0168900221002291" },
-
-      // 2020
-      { num: 56, year: "2020", firstAuthor: false, corrAuthor: false, authors: "H. Prihtiadi <em>et al</em>. [COSINE-100 Collaboration]", title: "Measurement of the cosmic muon annual and diurnal flux variation with the COSINE-100 detector", venue: "J. Cosmol. Astropart. Phys. <strong>02</strong>, 013 (2020)", url: "https://iopscience.iop.org/article/10.1088/1475-7516/2021/02/013" },
-      { num: 57, year: "2020", firstAuthor: false, corrAuthor: false, authors: "M. Chalton <em>et al</em>. [GBAR Collaboration]", title: "Positron production using a 9 MeV electron linac for the GBAR experiment", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>985</strong>, 164657 (2020)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0168900220310548" },
-      { num: 58, year: "2020", firstAuthor: false, corrAuthor: false, authors: "J.J. Choi <em>et al</em>.", title: "Improving the light collection using a new NaI(Tl) crystal encapsulation", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>981</strong>, 164556 (2020)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0168900220309530" },
-      { num: 59, year: "2020", firstAuthor: false, corrAuthor: false, authors: "Y. Jeong <em>et al</em>. [NEOS Collaboration]", title: "Pulse-shape Discrimination of Fast Neutron Background using Convolutional Neural Network for NEOS II", venue: "J. Korean Phys. Soc. <strong>77</strong>, 1118 (2020)", url: "https://link.springer.com/article/10.3938/jkps.77.1118" },
-      { num: 60, year: "2020", firstAuthor: false, corrAuthor: false, authors: "B.J. Park <em>et al</em>.", title: "Development of ultra-pure NaI(Tl) detectors for the COSINE-200 experiment", venue: "Eur. Phys. J. C <strong>80</strong>, 814 (2020)", url: "https://link.springer.com/article/10.1140/epjc/s10052-020-8386-8" },
-      { num: 61, year: "2020", firstAuthor: false, corrAuthor: false, authors: "B.H. Kim <em>et al</em>.", title: "Performance of the time-of-flight detector for a measurement of free fall of antihydrogen at the GBAR experiment", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>973</strong>, 164162 (2020)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0168900220305581" },
-      { num: 62, year: "2020", firstAuthor: false, corrAuthor: false, authors: "E. Barbosa de Souza <em>et al</em>. [COSINE-100 Collaboration]", title: "Study of cosmogenic radionuclides in the COSINE-100 NaI(Tl) detectors", venue: "Astropart. Phys. <strong>115</strong>, 102390 (2020)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0927650519301938" },
-
-      // 2019
-      { num: 63, year: "2019", firstAuthor: false, corrAuthor: false, authors: "P. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "A search for solar axion induced signals with COSINE-100", venue: "Astropart. Phys. <strong>114</strong>, 101-106 (2020)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0927650519301124" },
-      { num: 64, year: "2019", firstAuthor: true, corrAuthor: false, authors: "<strong class='text-white'>Y.J. Ko</strong> <em>et al</em>. [COSINE-100 Collaboration]", title: "Comparison between DAMA/LIBRA and COSINE-100 in the light of Quenching Factors", venue: "J. Cosmol. Astropart. Phys. <strong>11</strong>, 008 (2019)", url: "https://iopscience.iop.org/article/10.1088/1475-7516/2019/11/008" },
-      { num: 65, year: "2019", firstAuthor: false, corrAuthor: false, authors: "V. Alenkov <em>et al</em>. [AMoRE Collaboration]", title: "First result from the AMoRE-Pilot neutrinoless double beta decay experiment", venue: "Eur. Phys. J. C <strong>79</strong>, 791 (2019)", url: "https://link.springer.com/article/10.1140/epjc/s10052-019-7279-1" },
-      { num: 66, year: "2019", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "Search for a dark matter-induced annual modulation signal in NaI(Tl) with the COSINE-100 experiment", venue: "Phys. Rev. Lett. <strong>123</strong>, 031302 (2019)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.123.031302" },
-      { num: 67, year: "2019", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "COSINE-100 and DAMA/LIBRA-phase2 in WIMP effective models", venue: "J. Cosmol. Astropart. Phys. <strong>06</strong>, 048 (2019)", url: "https://iopscience.iop.org/article/10.1088/1475-7516/2019/06/048" },
-      { num: 68, year: "2019", firstAuthor: false, corrAuthor: false, authors: "C. Ha <em>et al</em>. [COSINE-100 Collaboration]", title: "First Direct Search for Inelastic Boosted Dark Matter with COSINE-100", venue: "Phys. Rev. Lett. <strong>122</strong>, 131802 (2019)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.122.131802" },
-      { num: 69, year: "2019", firstAuthor: false, corrAuthor: false, authors: "K. W. Kim <em>et al</em>. [KIMS Collaboration]", title: "Limits on Interactions between Weakly Interacting Massive Particles and Nucleons Obtained with NaI(Tl) crystal Detectors", venue: "J. High Energy Phys. <strong>2019</strong>, 194 (2019)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.99.091301" },
-
-      // 2018
-      { num: 70, year: "2018", firstAuthor: false, corrAuthor: false, authors: "C. H. Jang <em>et al</em>.", title: "Neutrinoless Double Beta Decay and Light Sterile Neutrino", venue: "J. Korean Phys. Soc. <strong>73</strong>, 1625 (2018)", url: "https://link.springer.com/article/10.3938/jkps.73.1625" },
-      { num: 71, year: "2018", firstAuthor: false, corrAuthor: false, authors: "G. Adhikari <em>et al</em>. [COSINE-100 Collaboration]", title: "An experiment to search for dark-matter interactions using sodium iodide detectors", venue: "Nature <strong>564</strong>, 83-86 (2018)", url: "https://www.nature.com/articles/s41586-018-0739-1" },
-      { num: 72, year: "2018", firstAuthor: false, corrAuthor: true, authors: "G. Adhikari <em>et al</em>.", title: "Study of fast neutron detector for COSINE-100 experiment", venue: "J. Instrum. <strong>13</strong>, T06005 (2018)", url: "https://iopscience.iop.org/article/10.1088/1748-0221/13/06/T06005" },
-
-      // 2017
-      { num: 73, year: "2017", firstAuthor: true, corrAuthor: false, authors: "<strong class='text-white'>Y. J. Ko</strong> <em>et al</em>. [NEOS Collaboration]", title: "Sterile Neutrino Search at the NEOS Experiment", venue: "Phys. Rev. Lett. <strong>118</strong>, 121802 (2017)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.118.121802" },
-
-      // 2016
-      { num: 74, year: "2016", firstAuthor: true, corrAuthor: false, authors: "<strong class='text-white'>Y. J. Ko</strong> <em>et al</em>. [NEOS Collaboration]", title: "Comparison of Fast Neutron Rates for the NEOS Experiment", venue: "J. Korean Phys. Soc. <strong>69</strong>, 1651 (2016)", url: "https://link.springer.com/article/10.3938/jkps.69.1651" },
-      { num: 75, year: "2016", firstAuthor: false, corrAuthor: false, authors: "J. H. Choi <em>et al</em>. [RENO Collaboration]", title: "Observation of Energy and Baseline Dependent Reactor Antineutrino Disappearance in the RENO Experiment", venue: "Phys. Rev. Lett. <strong>116</strong>, 211801 (2016)", url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.211801" },
-      { num: 76, year: "2016", firstAuthor: false, corrAuthor: false, authors: "J. Y. Lee <em>et al</em>. [AMoRE Collaboration]", title: "A Study of Radioactive Contamination of <sup>40</sup>Ca<sup>100</sup>MoO<sub>4</sub> Crystals for the AMoRE Experiment", venue: "IEEE Trans. Nucl. Sci. <strong>63</strong>, 543-547 (2016)", url: "https://ieeexplore.ieee.org/document/7454879" },
-      { num: 77, year: "2016", firstAuthor: false, corrAuthor: false, authors: "B. R. Kim <em>et al</em>. [NEOS Collaboration]", title: "Development and Mass Production of a Mixture of LAB and DIN- based Gadolinium-loaded Liquid Scintillator for the NEOS Short-baseline Neutrino Experiment", venue: "J. Radioanal. Nucl. Chem. <strong>310</strong>, 311-316 (2016)", url: "https://link.springer.com/article/10.1007/s10967-016-4826-1" },
-      { num: 78, year: "2016", firstAuthor: false, corrAuthor: false, authors: "J. H. Choi <em>et al</em>. [RENO Collaboration]", title: "Slow Control Systems of the Reactor Experiment for Neutrino Oscillation", venue: "Nucl. Instrum. Methods Phys. Res. Sec. A <strong>810</strong>, 100-106 (2016)", url: "https://www.sciencedirect.com/science/article/abs/pii/S0168900215015715" },
-
-      // 2015
-      { num: 79, year: "2015", firstAuthor: false, corrAuthor: false, authors: "B. R. Kim <em>et al</em>. [NEOS Collaboration]", title: "Pulse Shape Discrimination Capability of Metal-loaded Organic Liquid Scintillators for a Short-baseline Reactor Neutrino Experiment", venue: "Phys. Scr. <strong>90</strong>, 055302 (2015)", url: "https://iopscience.iop.org/article/10.1088/0031-8949/90/5/055302" },
-
-      // 2013
-      { num: 80, year: "2013", firstAuthor: false, corrAuthor: false, authors: "S. K. Kang <em>et al</em>.", title: "Four-Neutrino Analysis of 1.5 km Baseline Reactor Antineutrino Oscillations", venue: "Adv. High Energy Phys. <strong>2013</strong>, 138109 (2013)", url: "https://onlinelibrary.wiley.com/doi/10.1155/2013/138109" }
-    ];
-
-const container = document.getElementById('publications-container');
+    const container = document.getElementById('publications-container');
+    const emptyState = document.getElementById('pub-empty-state');
     const searchInput = document.getElementById('pub-search');
     const yearSelect = document.getElementById('pub-year-filter');
     const countSpan = document.getElementById('pub-count');
     const roleButtons = document.querySelectorAll('.role-filter-btn');
+    const yearGroups = Array.from(container.querySelectorAll('.pub-year-group'));
+    const pubItems = Array.from(container.querySelectorAll('.pub-item'));
     let selectedRole = 'ALL';
 
-    // Update static role counts on buttons
-    document.getElementById('count-all').textContent = PUBLICATIONS.length;
-    document.getElementById('count-lead').textContent = PUBLICATIONS.filter(p => p.firstAuthor || p.corrAuthor).length;
-    document.getElementById('count-first').textContent = PUBLICATIONS.filter(p => p.firstAuthor).length;
-    document.getElementById('count-corr').textContent = PUBLICATIONS.filter(p => p.corrAuthor).length;
+    const totalCount = pubItems.length;
+    const leadCount = pubItems.filter(el => el.dataset.first === '1' || el.dataset.corr === '1').length;
+    const firstCount = pubItems.filter(el => el.dataset.first === '1').length;
+    const corrCount = pubItems.filter(el => el.dataset.corr === '1').length;
+
+    document.getElementById('count-all').textContent = totalCount;
+    document.getElementById('count-lead').textContent = leadCount;
+    document.getElementById('count-first').textContent = firstCount;
+    document.getElementById('count-corr').textContent = corrCount;
+    countSpan.textContent = totalCount;
 
     function updateRoleButtonStyles() {
       roleButtons.forEach(btn => {
@@ -983,102 +1960,70 @@ const container = document.getElementById('publications-container');
       btn.addEventListener('click', () => {
         selectedRole = btn.dataset.roleFilter;
         updateRoleButtonStyles();
-        renderPublications();
+        filterPublications();
       });
     });
 
-    function renderRoleBadges(pub) {
-      const badges = [];
-      if (pub.firstAuthor) {
-        badges.push(`<span class="px-2 py-0.5 rounded bg-sky-500/15 border border-sky-400/30 text-sky-300 text-[11px] font-semibold">First Author</span>`);
-      }
-      if (pub.corrAuthor) {
-        badges.push(`<span class="px-2 py-0.5 rounded bg-amber-500/15 border border-amber-400/30 text-amber-300 text-[11px] font-semibold">Corresponding Author</span>`);
-      }
-      if (badges.length === 0) return '';
-      return `<div class="flex flex-wrap gap-1.5 shrink-0">${badges.join('')}</div>`;
-    }
-
-    function renderPublications() {
+    function filterPublications() {
       const query = searchInput.value.trim().toLowerCase();
       const selectedYear = yearSelect.value;
-      const isFiltered = Boolean(query) || selectedYear !== 'ALL' || selectedRole !== 'ALL';
 
-      const filtered = PUBLICATIONS.filter(pub => {
-        const matchesYear = selectedYear === 'ALL' || pub.year === selectedYear;
+      const matchedItems = pubItems.filter(item => {
+        const itemYear = item.dataset.year;
+        const isFirst = item.dataset.first === '1';
+        const isCorr = item.dataset.corr === '1';
+        const searchText = item.dataset.search || '';
+
+        const matchesYear = selectedYear === 'ALL' || itemYear === selectedYear;
         const matchesRole =
           selectedRole === 'ALL' ||
-          (selectedRole === 'LEAD' && (pub.firstAuthor || pub.corrAuthor)) ||
-          (selectedRole === 'FIRST' && pub.firstAuthor) ||
-          (selectedRole === 'CORR' && pub.corrAuthor);
+          (selectedRole === 'LEAD' && (isFirst || isCorr)) ||
+          (selectedRole === 'FIRST' && isFirst) ||
+          (selectedRole === 'CORR' && isCorr);
+        const matchesQuery = !query || searchText.includes(query);
 
-        const roleKeywords = [
-          pub.firstAuthor ? 'first author' : '',
-          pub.corrAuthor ? 'corresponding author *' : ''
-        ].join(' ');
-
-        const plainText = (pub.authors + ' ' + pub.title + ' ' + pub.venue + ' ' + pub.year + ' ' + roleKeywords)
-          .replace(/<[^>]*>/g, '')
-          .toLowerCase();
-        const matchesQuery = !query || plainText.includes(query);
         return matchesYear && matchesRole && matchesQuery;
       });
 
-      countSpan.textContent = filtered.length;
+      const matchedSet = new Set(matchedItems);
+      countSpan.textContent = matchedItems.length;
 
-      if (filtered.length === 0) {
-        container.innerHTML = `<div class="glass-card rounded-xl p-8 text-center text-slate-400">No publications matched your filter criteria.</div>`;
+      if (matchedItems.length === 0) {
+        container.classList.add('hidden');
+        emptyState.classList.remove('hidden');
         return;
       }
 
-      const filteredIndexMap = new Map();
-      filtered.forEach((pub, idx) => {
-        filteredIndexMap.set(pub, filtered.length - idx);
+      container.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+
+      const displayNumberMap = new Map();
+      matchedItems.forEach((item, idx) => {
+        displayNumberMap.set(item, matchedItems.length - idx);
       });
 
-      const grouped = {};
-      filtered.forEach(pub => {
-        if (!grouped[pub.year]) grouped[pub.year] = [];
-        grouped[pub.year].push(pub);
+      pubItems.forEach(item => {
+        const isVisible = matchedSet.has(item);
+        item.classList.toggle('hidden', !isVisible);
+        if (isVisible) {
+          const numEl = item.querySelector('.pub-num');
+          if (numEl) {
+            numEl.textContent = `${displayNumberMap.get(item)}.`;
+          }
+        }
       });
 
-      const totalCount = PUBLICATIONS.length;
-      const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
-      container.innerHTML = years.map(year => `
-        <div>
-          <h3 class="font-display text-2xl font-bold text-sky-400 mb-4 border-b border-slate-800 pb-2">${year}</h3>
-          <ol class="space-y-3">
-            ${grouped[year].map(p => {
-              const displayNum = isFiltered
-                ? filteredIndexMap.get(p)
-                : totalCount - PUBLICATIONS.indexOf(p);
-              return `
-              <li class="glass-card rounded-xl p-4 sm:p-5 text-sm sm:text-base">
-                <div class="flex items-start justify-between gap-3">
-                  <div class="flex items-start gap-3 min-w-0">
-                    <span class="font-display font-bold text-sky-400 min-w-[2rem] shrink-0">${displayNum}.</span>
-                    <div class="space-y-1 min-w-0">
-                      <p class="text-slate-300">${p.authors}</p>
-                      <p class="font-semibold text-white">“${p.title}”</p>
-                      <p class="text-sm">
-                        <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 underline">
-                          ${p.venue} ↗
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  ${renderRoleBadges(p)}
-                </div>
-              </li>`;
-            }).join('')}
-          </ol>
-        </div>
-      `).join('');
+      yearGroups.forEach(group => {
+        const hasVisibleItem = Array.from(group.querySelectorAll('.pub-item')).some(
+          item => !item.classList.contains('hidden')
+        );
+        group.classList.toggle('hidden', !hasVisibleItem);
+      });
     }
 
-    searchInput.addEventListener('input', renderPublications);
-    yearSelect.addEventListener('change', renderPublications);
-    renderPublications();
+    searchInput.addEventListener('input', filterPublications);
+    yearSelect.addEventListener('change', filterPublications);
+    filterPublications();
 
     // Mobile navigation toggle
     const mobileBtn = document.getElementById('mobile-menu-btn');
